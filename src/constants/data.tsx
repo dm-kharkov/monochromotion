@@ -17,13 +17,7 @@ export const marqueeCollection = [
   <WaveText key='now' text='Now,' className='mr-[2rem]' colorType='black' />
 ]
 
-export const creativeCollection = [
-  'Immersive',
-  'Creative',
-  'Interactive',
-  'Innovative',
-  'Expressive'
-]
+export const creativeCollection = ['Immersive', 'Creative']
 
 export const videoCollection = [
   'https://videos.pexels.com/video-files/5008748/5008748-uhd_3840_2160_25fps.mp4',

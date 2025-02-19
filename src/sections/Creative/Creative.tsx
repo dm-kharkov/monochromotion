@@ -24,7 +24,7 @@ const Creative = (): ReactElement => {
   return (
     <section
       className={clsx(
-        'min-h-screen relative flex flex-col overflow-x-hidden mt-[100vh] pointer-events-none z-10',
+        'min-h-screen relative flex flex-col overflow-x-hidden mt-[50vh] pointer-events-none z-10',
         creativeClasses.root
       )}
     >
@@ -46,7 +46,7 @@ const Creative = (): ReactElement => {
         )}
       />
 
-      <div className='w-[min(100%,1400px)] mx-[auto] flex flex-col grow justify-center mix-blend-difference font-paytone-one'>
+      <div className='w-[min(100%,1400px)] mx-[auto] flex flex-col grow justify-center mix-blend-difference font-paytone-one qq'>
         <div className='-mb-[min(5vw,50px)]  px-[10px] sm:px-[2rem]'>
           <AnimatedEntrance className='w-1/2' variant='appearance' hideOnLeave>
             <p
