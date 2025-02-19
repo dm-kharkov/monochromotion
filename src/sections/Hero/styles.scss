@@ -1,0 +1,23 @@
+@property --x {
+  syntax: '<length-percentage>';
+  initial-value: 50vw;
+  inherits: false
+}
+
+@property --y {
+  syntax: '<length-percentage>';
+  initial-value: 50vh;
+  inherits: false
+}
+
+.hero-bg {
+  --pattern: radial-gradient(closest-side, #777, #fff) 0/ 2em 2em;
+  --map: radial-gradient(circle farthest-corner at var(--x) var(--y), #888, #fff);
+
+  background: var(--pattern), var(--map);
+  background-blend-mode: multiply;
+  filter: contrast(50);
+  transition: .35s cubic-bezier(.1, 0, .5, 1.5);
+  will-change: --x, --y;
+  transition-property: --x, --y;
+}

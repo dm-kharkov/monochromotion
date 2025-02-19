@@ -1,0 +1,31 @@
+.char {
+  text-shadow: 0 0 3px #000;
+}
+
+.link {
+  position: relative;
+  color: #000;
+  will-change: color;
+  transition: color 0.35s ease;
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    z-index: -1;
+    will-change: height;
+    transition: height 0.35s ease-out;
+  }
+
+  &:hover, &:focus {
+    color: #fff;
+
+    &::after {
+      height: calc-size(auto, size + 100%);
+    }
+  }
+}

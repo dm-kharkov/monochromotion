@@ -1,0 +1,46 @@
+.animated {
+  transition: opacity 1s ease, transform 0.5s ease;
+};
+
+.delay {
+  transition: all 0.5s ease 0.5s;
+};
+
+.upShow {
+  opacity: 0;
+  transform: translate3d(0, 70px, 0);
+};
+
+.leftShow {
+  opacity: 0;
+  transform: translate3d(70px, 0, 0);
+};
+
+.rightShow {
+  opacity: 0;
+  transform: translate3d(-70px, 0, 0);
+};
+
+.downShow {
+  opacity: 0;
+  transform: translate3d(0, -70px, 0);
+};
+
+.hideOnLeave {
+  transition: opacity 0.5s ease, transform 0.5s ease
+};
+
+.animatedShow {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+};
+
+.appearance {
+  transform: translateY(100%);
+  will-change: transform;
+  transition: transform 1s
+};
+
+.appearanceShow {
+  transform: translateY(0%);
+}

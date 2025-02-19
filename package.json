@@ -1,0 +1,52 @@
+{
+  "name": "next15ts-proj",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 8000",
+    "build": "next build",
+    "postbuild": "next-sitemap",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@gsap/react": "^2.1.2",
+    "@types/splitting": "^1.0.6",
+    "clsx": "^2.1.1",
+    "graphql-tag": "^2.12.6",
+    "gsap": "^3.12.7",
+    "lenis": "^1.1.20",
+    "next": "15.1.7",
+    "next-sitemap": "^4.2.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-fast-marquee": "^1.6.5",
+    "react-use": "^17.6.0",
+    "sass": "^1.85.0",
+    "splitting": "^1.1.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.2.0",
+    "@eslint/js": "^9.19.0",
+    "@tailwindcss/postcss": "^4.0.7",
+    "@types/node": "^22.13.4",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.20.1",
+    "eslint-config-next": "15.1.7",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-prettier": "^5.2.3",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.18",
+    "file-loader": "^6.2.0",
+    "globals": "^15.15.0",
+    "postcss": "^8.5.2",
+    "prettier": "^3.5.1",
+    "raw-loader": "^4.0.2",
+    "tailwindcss": "^4.0.7",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.24.1",
+    "url-loader": "^4.1.1"
+  }
+}

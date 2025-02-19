@@ -1,0 +1,19 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - make install
+
+  #pre_build:
+    #commands:
+      # - command
+
+  build:
+    commands:
+      - make build
+
+  post_build:
+    commands:
+      - aws s3 sync ./out s3://$S3_BUCKET --delete --only-show-errors
+      - aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION_ID --paths "/*"

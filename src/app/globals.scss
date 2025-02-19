@@ -1,0 +1,63 @@
+@use "tailwindcss";
+@import 'lenis/dist/lenis.css';
+
+@font-face {
+  font-family: 'Source Sans';
+  src: url('https://d33wubrfki0l68.cloudfront.net/f0f35e1c78339e9ab650f7d10a2b30af1ec0104a/147e5/assets/fonts/variable/sourcesansvariable-roman.ttf')
+  format('truetype-variations');
+  font-weight: 1 999;
+  font-display: swap;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  background-color: #000;
+}
+
+/* FONTS */
+.font-chango {
+  font-family: var(--font-chango), Verdana, sans-serif;
+}
+
+.font-paytone-one {
+  font-family: var(--font-paytone-one), Verdana, sans-serif;
+}
+
+.font-poppins {
+  font-family: var(--font-poppins), Verdana, sans-serif;
+}
+
+.font-source-sans {
+  font-family: Source Sans, Arial sans-serif;
+}
+
+/* TEXT */
+.white-stroke {
+  -webkit-text-stroke: 5px #fff;
+  text-stroke: 5px #fff;
+}
+
+
+.black-stroke {
+  -webkit-text-stroke: 5px #000;
+  text-stroke: 5px #000;
+}
+
+.thin-stroke {
+  -webkit-text-stroke-width: 3px;
+  text-stroke-width: 3px;
+}
