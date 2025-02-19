@@ -1,6 +1,7 @@
 {
-  "name": "next15ts-proj",
-  "version": "0.1.0",
+  "name": "creative-motion-ui",
+  "title": "Creative Motion UI",
+  "version": "1.30.04",
   "private": true,
   "scripts": {
     "dev": "next dev -p 8000",

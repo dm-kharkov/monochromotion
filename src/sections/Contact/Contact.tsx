@@ -26,7 +26,7 @@ const Contact = (): ReactElement => {
 
   return (
     <section className='h-[350px] relative z-12 mt-[50vh] bg-white p-[1rem]'>
-      <div className='w-[min(100%,1400px)] mx-[auto] flex flex-col sm:flex-row justify-end'>
+      <div className='h-full w-[min(100%,1400px)] mx-[auto] flex flex-col sm:flex-row justify-end'>
         {contactItemsCollection.map((collection, index) => {
           const isRight = index === 1
 
