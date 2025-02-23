@@ -27,7 +27,7 @@ export const videoCollection = [
   'https://videos.pexels.com/video-files/7686726/7686726-uhd_3840_2160_24fps.mp4'
 ]
 
-export const contactTitleCollection = ['HOW DO', 'WE WORK', 'TOGETHER?']
+export const contactTitleCollection = ['SYNCING', 'IMAGINATION', 'WITH TECH']
 
 const contactLeftCollection = [
   {

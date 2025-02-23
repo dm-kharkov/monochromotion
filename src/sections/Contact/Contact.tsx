@@ -49,7 +49,7 @@ const Contact = (): ReactElement => {
 
       <div
         className={clsx(
-          'w-full sm:w-[auto] px-[1rem] absolute -top-[20%] md:-top-[50%] left-[50%] -translate-x-[50%] flex flex-col text-[5rem] md:text-[11.5rem] -tracking-[0.5rem] md:-tracking-[1.5rem] leading-[0.64] text-center text-white font-source-sans cursor-pointer mix-blend-difference',
+          'w-full px-[1rem] absolute -top-[20%] md:-top-[40%] lg:-top-[50%] left-[50%] -translate-x-[50%] flex flex-col text-[4.5rem] md:text-[9rem] lg:text-[12rem] -tracking-[0.45rem] md:-tracking-[1rem] leading-[0.64] text-center text-white font-source-sans cursor-pointer mix-blend-difference',
           contactClasses.textWrapper
         )}
         data-splitting

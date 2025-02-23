@@ -1,9 +1,26 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# monochroMotion
 
-## Getting Started
+## Installation
 
-First, run the development server:
+In the project directory, need to start:
 
+```bash
+npm install  
+```
+
+or
+
+```bash
+npm i  
+```
+
+This command will directly install the required dependencies into the directory you specify. After this command
+completes, you can start the application.
+
+
+## Run development mode
+
+Use on of the following commands, to start local development server:
 ```bash
 npm run dev
 # or
@@ -14,23 +31,34 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Starts the process of compiling and assembling the application from source code.
+Special configs with the necessary settings are used in this process.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The result of a successful execution there will be information  about the time spent on assembly and the address: http://localhost:8000
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Create production build
 
-## Learn More
+Use next command to create production build:
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+Starts the process of creating an `out` directory from source code with compiled Application.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Also like command `npm run dev`, will use special configs with the necessary settings to create production application build.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Create site map
+Automatically process in production build.
 
-## Deploy on Vercel
+To generate site map manually use:
+```
+npm run postbuild
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Starts the process of creation two main components for successfully indexing your pages. It's files ``sitemap.xml`` and ``robots.txt``
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+``sitemap.xml`` is a list of all posts and pages you want crawlers to discover and index, and ``robots.txt`` shows which
+parts of the website should be included and completely excluded from crawling.
+
+
+### Powered by: ``dm``
