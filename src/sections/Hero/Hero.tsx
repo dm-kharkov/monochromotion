@@ -90,7 +90,7 @@ const Hero = (): ReactElement => {
                 text='works?'
                 component='p'
                 textClassName={clsx(
-                  'mr-[0] text-[3.6rem] sm:text-8xl uppercase black-stroke',
+                  'mr-[0] text-[3.5rem] sm:text-8xl uppercase black-stroke',
                   heroClasses.subtitleWord
                 )}
               />
