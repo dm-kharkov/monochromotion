@@ -26,6 +26,13 @@ export interface AnimatedEntranceProps extends ChildrenProps {
   wrap?: boolean
 }
 
+export interface AnimatedEntranceTextProps
+  extends Omit<AnimatedEntranceProps, 'children'>,
+    BaseTextProps {
+  textSeparator?: string,
+  delayIncrement?: number
+}
+
 export interface BaseTextProps {
   component?: ElementType
   text: string

@@ -5,8 +5,8 @@ import Lenis from 'lenis'
 gsap.registerPlugin(ScrollTrigger)
 
 export const gsapSmoothScroll = (): (() => void) => {
-  const lenis = new Lenis({ duration: 2 })
-
+  const lenis = new Lenis({ duration:2 })
+  
   lenis.on('scroll', ScrollTrigger.update)
 
   gsap.ticker.add((time) => {

@@ -64,7 +64,7 @@ const AnimatedEntrance = (props: AnimatedEntranceProps): ReactElement => {
     return () => {
       mounted.current = false
     }
-  })
+  }, [showOnMount])
 
   return (
     <>
