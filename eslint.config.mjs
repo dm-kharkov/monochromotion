@@ -32,11 +32,18 @@ export default [
       'no-multi-spaces': ['error'],
       'func-call-spacing': ['error', 'never'],
       'space-in-parens': ['error', 'never'],
-      'arrow-spacing': ['error', { before: true, after: true }],
+      'arrow-spacing': ['error', { 
+        before: true, 
+        after: true 
+      }],
       'no-multiple-empty-lines': [1, { 'max': 1 }],
       'comma-dangle': ['error', 'never'],
       'jsx-quotes': ['error', 'prefer-single'],
-      'react/jsx-tag-spacing': ['error', { beforeSelfClosing: 'never', afterOpening: 'never', beforeClosing: 'never' }],
+      'react/jsx-tag-spacing': ['error', { 
+        beforeSelfClosing: 'always', 
+        afterOpening: 'never', 
+        beforeClosing: 'never'
+      }],
       'react/jsx-equals-spacing': ['error', 'never'],
       'import/no-anonymous-default-export': ['error', { 'allowArray': true }],
       '@typescript-eslint/explicit-module-boundary-types': 'error',
