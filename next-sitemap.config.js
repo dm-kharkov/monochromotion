@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: process.env.SITE_URL || 'https://monochromotion.vercel.app/',
+  siteUrl: 'https://monochromotion.vercel.app/',
   sitemapSize: 5000,
   generateRobotsTxt: true,
   robotsTxtOptions: {
@@ -12,13 +12,11 @@ module.exports = {
       }
     ]
   },
-  transform: async (path) => {
-    const isHomePage = path === '/'
-
+  transform: async (_, url) => {
     return {
-      loc: path,
+      loc: url,
       changefreq: 'daily',
-      priority: isHomePage ? 1.0 : 0.5,
+      priority: url === '/' ? 1.0 : 0.5,
       lastmod: new Date().toISOString()
     }
   }
