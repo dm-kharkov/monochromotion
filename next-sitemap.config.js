@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: process.env.SITE_URL || 'https://example.com',
+  siteUrl: process.env.SITE_URL || 'https://monochromotion.vercel.app/',
   sitemapSize: 5000,
   generateRobotsTxt: true,
   robotsTxtOptions: {

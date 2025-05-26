@@ -5,7 +5,7 @@ Disallow: /admin
 Disallow: /dashboard
 
 # Host
-Host: https://example.com
+Host: https://monochromotion.vercel.app/
 
 # Sitemaps
-Sitemap: https://example.com/sitemap.xml
+Sitemap: https://monochromotion.vercel.app/sitemap.xml
